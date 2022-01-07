@@ -5,15 +5,25 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import Vue from "vue"
+import { getAppName } from "@/service/api";
 
-export default {
+export default Vue.extend({
   name: 'App',
   components: {
     HelloWorld
+  },
+  methods: {
+    foo(): boolean {
+      return getAppName(true)
+    },
+    bar(): string {
+      return this.$api.getAppName()
+    }
   }
-}
+})
 </script>
 
 <style>
