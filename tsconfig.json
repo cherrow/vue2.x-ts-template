@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noEmitOnError": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "allowJs": true,
+    "noEmit": false,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.vue", "**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
